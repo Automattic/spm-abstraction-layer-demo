@@ -14,3 +14,6 @@ flowchart TD
     E --> |Injected by App|B
     E --> |Injected by App|C
 ```
+
+Notice that the abstraction layer needs to be implemented in Objective-C.
+If implemented in Swift, then we'd be back to the situation described in the [SPM issues](https://github.com/apple/swift-package-manager/issues/5951). For more details, see https://github.com/Automattic/spm-abstraction-layer-demo/pull/1
