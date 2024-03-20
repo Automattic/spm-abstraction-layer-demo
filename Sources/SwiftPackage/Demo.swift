@@ -1,5 +1,5 @@
 import GlueLayer
 
-func demo(greeter: Greeter) -> String {
+public func demo(greeter: Greeter) -> String {
     greeter.sayHello()
 }

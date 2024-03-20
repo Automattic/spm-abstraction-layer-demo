@@ -42,5 +42,20 @@ let package = Package(
                 .target(name: "GlueLayer"),
             ]
         ),
+        .target(
+            name: "FakeApp",
+            dependencies: [
+                .target(name: "GlueLayer"),
+                .target(name: "SwiftCore"),
+                .target(name: "SwiftPackage"),
+                .target(name: "ObjectiveCPackage"),
+            ]
+        ),
+        .testTarget(
+            name: "FakeAppTests",
+            dependencies: [
+                .target(name: "FakeApp"),
+            ]
+        ),
     ]
 )
