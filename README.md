@@ -7,7 +7,7 @@ The solution is to introduce an abstraction layer to break the direct dependency
 flowchart TD
     A(App) --> B(Objective-C package)
     A --> C(Swift package)
-    B --> D(Abstraction Layer)
+    B --> D(Abstraction Layer - must be Objective-C )
     C --> D
     E(Implementaion Layer) --> |implements| D
     A --> E
